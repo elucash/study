@@ -1,0 +1,6 @@
+#!/bin/bash
+
+classname=$1
+
+javac -sourcepath "" -d classes src/$classname.java \
+  && java -ea -cp ./classes $classname
